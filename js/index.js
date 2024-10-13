@@ -7,19 +7,18 @@ if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(function(pos){
         let lat=pos.coords.latitude;
         let long=pos.coords.longitude;
-        weather(`${lat},${long}`)
+        // weather(`${lat},${long}`)
     })
 }
 async function weather(query){
     let response=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=20cfad0fb0914280994181010241110&q=${query}&days=3`)
     let data= await response.json()
-    console.log(data);
     display(data)
     displayTomm(data)
     displayThird(data)
 
 }
-
+weather('alex')
 
 function display(data){
     lettoday=data.current.last_updated
