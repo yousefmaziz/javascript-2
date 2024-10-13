@@ -1,0 +1,115 @@
+.my-color{
+    background-color: #262936;
+}
+.color-2{
+    background-color: #191a1f;
+}
+.color-2{
+    background-color: #313238;
+}
+html{
+    scroll-behavior: smooth;
+    
+    scroll-padding-top:90px ;
+}
+.section-1{
+    background-image: url(../img/banner.png);
+    
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+.details{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.section-1 input ,.footer input{
+    border-radius: 20px;
+    background-color: #1e202b;
+    width: 100%;
+    color: white;
+}
+.section-1 input:focus{
+    border:1px solid #1e202b;
+}
+.section-1 button ,.footer button{
+    right: 5px;
+    border-radius: 20px;
+    top: 2px;
+}
+.footer button{
+    right: 25.3%;
+    border-radius: 20px;
+    top: 2px;
+    padding: 7px 20px;
+}
+ul i{
+    background-color:rgba(128, 128, 128, 0.336);
+    padding: 5px;
+    border-radius: 50%;
+}
+li:hover i{
+color:white;
+background-color: rgba(0, 0, 255, 0.692);
+transition: all 500ms;
+}
+p{
+    font-size: 12px;
+    color: grey;
+}
+.footer{
+    padding: 50px 0px 0px 0px;
+}
+.col-4{
+    border: 3px solid transparent;
+    
+}
+.weather .container{
+    margin-top: -70px;
+}
+.weather {
+    height: 80vh;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #101118;
+    
+}
+.day {
+    
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+.day:last-child {
+    border-right: none;
+}
+.temperature {
+    font-size: 48px;
+    
+}
+.first-day .temperature{
+    font-size: 90px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+.date {
+    font-size: 16px;
+    
+}
+.condition {
+    font-size: 24px;
+    
+}
+.days{
+
+    background: #323544;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.buleee{
+    color: rgb(54, 54, 221);
+    font-size: 15px;
+}
