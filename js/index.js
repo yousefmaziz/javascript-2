@@ -7,7 +7,7 @@ if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(function(pos){
         let lat=pos.coords.latitude;
         let long=pos.coords.longitude;
-        // weather(`${lat},${long}`)
+        weather(`${lat},${long}`)
     })
 }
 async function weather(query){
@@ -18,7 +18,7 @@ async function weather(query){
     displayThird(data)
 
 }
-weather('alex')
+weather('cairo')
 
 function display(data){
     lettoday=data.current.last_updated
