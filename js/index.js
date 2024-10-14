@@ -11,7 +11,7 @@ if(navigator.geolocation){
     })
 }
 async function weather(query){
-    let response=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=20cfad0fb0914280994181010241110&q=${query}&days=3`)
+    let response=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=20cfad0fb0914280994181010241110&q=${query}&days=3`)
     let data= await response.json()
     display(data)
     displayTomm(data)
